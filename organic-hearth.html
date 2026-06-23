@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" dir="ltr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Coffee Co. | The Organic Hearth</title>
+<script src="assets/tailwind.js"></script>
+<link href="assets/fonts.css" rel="stylesheet"/>
+<style>.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;}</style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "tertiary-fixed": "rgb(var(--tertiary-fixed) / <alpha-value>)",
+                "outline": "rgb(var(--outline) / <alpha-value>)",
+                "on-secondary-fixed-variant": "rgb(var(--on-secondary-fixed-variant) / <alpha-value>)",
+                "primary-fixed": "rgb(var(--primary-fixed) / <alpha-value>)",
+                "tertiary": "rgb(var(--tertiary) / <alpha-value>)",
+                "surface-container-highest": "rgb(var(--surface-container-highest) / <alpha-value>)",
+                "surface-container-low": "rgb(var(--surface-container-low) / <alpha-value>)",
+                "on-error-container": "rgb(var(--on-error-container) / <alpha-value>)",
+                "on-tertiary-container": "rgb(var(--on-tertiary-container) / <alpha-value>)",
+                "on-secondary-fixed": "rgb(var(--on-secondary-fixed) / <alpha-value>)",
+                "on-tertiary-fixed-variant": "rgb(var(--on-tertiary-fixed-variant) / <alpha-value>)",
+                "on-tertiary": "rgb(var(--on-tertiary) / <alpha-value>)",
+                "inverse-on-surface": "rgb(var(--inverse-on-surface) / <alpha-value>)",
+                "on-primary": "rgb(var(--on-primary) / <alpha-value>)",
+                "on-secondary": "rgb(var(--on-secondary) / <alpha-value>)",
+                "outline-variant": "rgb(var(--outline-variant) / <alpha-value>)",
+                "surface-dim": "rgb(var(--surface-dim) / <alpha-value>)",
+                "secondary": "rgb(var(--secondary) / <alpha-value>)",
+                "primary": "rgb(var(--primary) / <alpha-value>)",
+                "primary-container": "rgb(var(--primary-container) / <alpha-value>)",
+                "surface": "rgb(var(--surface) / <alpha-value>)",
+                "surface-container": "rgb(var(--surface-container) / <alpha-value>)",
+                "secondary-fixed": "rgb(var(--secondary-fixed) / <alpha-value>)",
+                "inverse-surface": "rgb(var(--inverse-surface) / <alpha-value>)",
+                "on-secondary-container": "rgb(var(--on-secondary-container) / <alpha-value>)",
+                "on-surface-variant": "rgb(var(--on-surface-variant) / <alpha-value>)",
+                "secondary-fixed-dim": "rgb(var(--secondary-fixed-dim) / <alpha-value>)",
+                "on-primary-fixed-variant": "rgb(var(--on-primary-fixed-variant) / <alpha-value>)",
+                "error": "rgb(var(--error) / <alpha-value>)",
+                "surface-tint": "rgb(var(--surface-tint) / <alpha-value>)",
+                "surface-variant": "rgb(var(--surface-variant) / <alpha-value>)",
+                "surface-bright": "rgb(var(--surface-bright) / <alpha-value>)",
+                "error-container": "rgb(var(--error-container) / <alpha-value>)",
+                "on-primary-fixed": "rgb(var(--on-primary-fixed) / <alpha-value>)",
+                "background": "rgb(var(--background) / <alpha-value>)",
+                "primary-fixed-dim": "rgb(var(--primary-fixed-dim) / <alpha-value>)",
+                "tertiary-fixed-dim": "rgb(var(--tertiary-fixed-dim) / <alpha-value>)",
+                "surface-container-high": "rgb(var(--surface-container-high) / <alpha-value>)",
+                "tertiary-container": "rgb(var(--tertiary-container) / <alpha-value>)",
+                "on-error": "rgb(var(--on-error) / <alpha-value>)",
+                "on-primary-container": "rgb(var(--on-primary-container) / <alpha-value>)",
+                "on-surface": "rgb(var(--on-surface) / <alpha-value>)",
+                "surface-container-lowest": "rgb(var(--surface-container-lowest) / <alpha-value>)",
+                "inverse-primary": "rgb(var(--inverse-primary) / <alpha-value>)",
+                "on-background": "rgb(var(--on-background) / <alpha-value>)",
+                "secondary-container": "rgb(var(--secondary-container) / <alpha-value>)",
+                "on-tertiary-fixed": "rgb(var(--on-tertiary-fixed) / <alpha-value>)"
+              },
+              "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px", "2xl": "1rem", "3xl": "1.5rem" },
+              "spacing": { "margin-mobile": "16px", "container-max": "1280px", "stack-md": "24px", "stack-lg": "48px", "stack-sm": "12px", "margin-desktop": "64px", "gutter": "24px", "unit": "8px" },
+              "fontFamily": {
+                      "display-lg-mobile": ["EB Garamond"], "headline-sm": ["Manrope"], "label-caps": ["Manrope"],
+                      "headline-md": ["EB Garamond"], "display-lg": ["EB Garamond"], "body-lg": ["Work Sans"],
+                      "body-md": ["Work Sans"], "mono-technical": ["Space Grotesk"], "nav": ["Manrope"]
+              },
+              "fontSize": {
+                      "display-lg-mobile": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                      "headline-sm": ["20px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                      "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                      "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                      "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "mono-technical": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        /* ===== Theme tokens (Dark = default) ===== */
+        :root, .dark {
+            --tertiary-fixed: 92 67 38; --outline: 138 115 97; --on-secondary-fixed-variant: 240 217 184;
+            --primary-fixed: 240 230 218; --tertiary: 212 163 115; --surface-container-highest: 42 29 23;
+            --surface-container-low: 36 24 20; --on-error-container: 255 180 171; --on-tertiary-container: 232 201 160;
+            --on-secondary-fixed: 255 232 204; --on-tertiary-fixed-variant: 240 217 184; --on-tertiary: 42 22 8;
+            --inverse-on-surface: 36 24 20; --on-primary: 35 19 9; --on-secondary: 42 22 8; --outline-variant: 74 58 48;
+            --surface-dim: 21 13 11; --secondary: 212 163 115; --primary: 240 230 218; --primary-container: 58 40 32;
+            --surface: 26 17 16; --surface-container: 42 29 23; --secondary-fixed: 122 79 40; --inverse-surface: 240 230 218;
+            --on-secondary-container: 255 217 168; --on-surface-variant: 192 171 152; --secondary-fixed-dim: 200 145 90;
+            --on-primary-fixed-variant: 216 196 176; --error: 255 84 73; --surface-tint: 212 163 115; --surface-variant: 42 29 23;
+            --surface-bright: 58 40 32; --error-container: 147 0 10; --on-primary-fixed: 26 17 16; --background: 26 17 16;
+            --primary-fixed-dim: 192 171 152; --tertiary-fixed-dim: 224 176 122; --surface-container-high: 58 40 32;
+            --tertiary-container: 212 163 115; --on-error: 105 0 5; --on-primary-container: 216 196 176; --on-surface: 240 230 218;
+            --surface-container-lowest: 21 13 11; --inverse-primary: 122 79 40; --on-background: 240 230 218;
+            --secondary-container: 122 79 40; --on-tertiary-fixed: 255 243 228;
+        }
+        /* ===== Light theme (cream / latte) ===== */
+        .light {
+            --tertiary-fixed: 230 203 160; --outline: 156 128 104; --on-secondary-fixed-variant: 90 58 26;
+            --primary-fixed: 42 24 16; --tertiary: 154 95 43; --surface-container-highest: 230 211 187;
+            --surface-container-low: 251 243 233; --on-error-container: 147 0 10; --on-tertiary-container: 90 58 26;
+            --on-secondary-fixed: 90 58 26; --on-tertiary-fixed-variant: 90 58 26; --on-tertiary: 255 248 240;
+            --inverse-on-surface: 245 236 225; --on-primary: 255 250 243; --on-secondary: 255 248 240; --outline-variant: 216 196 173;
+            --surface-dim: 230 211 187; --secondary: 154 95 43; --primary: 42 24 16; --primary-container: 240 217 184;
+            --surface: 245 236 225; --surface-container: 243 231 216; --secondary-fixed: 212 163 115; --inverse-surface: 42 24 16;
+            --on-secondary-container: 90 58 26; --on-surface-variant: 107 84 68; --secondary-fixed-dim: 200 145 90;
+            --on-primary-fixed-variant: 107 84 68; --error: 186 26 26; --surface-tint: 154 95 43; --surface-variant: 236 220 200;
+            --surface-bright: 255 250 243; --error-container: 255 218 214; --on-primary-fixed: 42 24 16; --background: 245 236 225;
+            --primary-fixed-dim: 107 84 68; --tertiary-fixed-dim: 154 95 43; --surface-container-high: 236 220 200;
+            --tertiary-container: 154 95 43; --on-error: 255 255 255; --on-primary-container: 107 84 68; --on-surface: 42 24 16;
+            --surface-container-lowest: 255 250 243; --inverse-primary: 212 163 115; --on-background: 42 24 16;
+            --secondary-container: 240 217 184; --on-tertiary-fixed: 90 58 26;
+        }
+
+        html { transition: background-color .4s ease; }
+        .soft-shadow { box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(148, 163, 184, 0.06); }
+        .light .soft-shadow { box-shadow: 0 24px 60px -12px rgba(120, 80, 40, 0.18), 0 0 0 1px rgba(154, 95, 43, 0.08); }
+
+        body { position: relative; background-color: rgb(var(--surface)); overflow-x: hidden; transition: background-color .4s ease; }
+        body[lang="ar"] { font-family: 'Cairo', 'Work Sans', sans-serif; }
+        body::before {
+            content: ""; position: fixed; inset: -20%; z-index: -1;
+            background:
+                radial-gradient(40% 35% at 12% 8%, rgba(212, 163, 115, 0.20), transparent 60%),
+                radial-gradient(38% 32% at 92% 6%, rgba(200, 145, 90, 0.16), transparent 60%),
+                radial-gradient(45% 40% at 50% 100%, rgba(122, 79, 40, 0.18), transparent 60%);
+            animation: aurora 18s ease-in-out infinite alternate;
+        }
+        .light body::before {
+            background:
+                radial-gradient(40% 35% at 12% 8%, rgba(212, 163, 115, 0.28), transparent 60%),
+                radial-gradient(38% 32% at 92% 6%, rgba(200, 145, 90, 0.24), transparent 60%),
+                radial-gradient(45% 40% at 50% 100%, rgba(240, 217, 184, 0.45), transparent 60%);
+        }
+        @keyframes aurora {
+            0%   { transform: translate3d(0, 0, 0) scale(1); }
+            50%  { transform: translate3d(-2%, 1.5%, 0) scale(1.08); }
+            100% { transform: translate3d(2%, -1.5%, 0) scale(1.04); }
+        }
+
+        .glass {
+            background: rgba(42, 29, 23, 0.55) !important;
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(148, 163, 184, 0.12) !important;
+        }
+        .glass:hover { border-color: rgba(212, 163, 115, 0.5) !important; box-shadow: 0 24px 60px -12px rgba(0,0,0,0.65), 0 0 28px -6px rgba(212, 163, 115, 0.35); }
+        .light .glass { background: rgba(255, 250, 243, 0.62) !important; border: 1px solid rgba(154, 95, 43, 0.18) !important; }
+        .light .glass:hover { border-color: rgba(154, 95, 43, 0.5) !important; box-shadow: 0 24px 60px -12px rgba(120,80,40,0.20), 0 0 28px -6px rgba(154, 95, 43, 0.30); }
+
+        img, .bg-cover { filter: saturate(1.1) sepia(0.12) brightness(0.95) contrast(1.05); }
+        .light img, .light .bg-cover { filter: saturate(1.05) sepia(0.05) brightness(1.0) contrast(1.02); }
+
+        .glow-cyan { box-shadow: 0 0 24px -4px rgba(212, 163, 115, 0.55); }
+        .text-gradient { background: linear-gradient(100deg, #e8c9a0 0%, #d4a373 50%, #c8915a 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .light .text-gradient { background: linear-gradient(100deg, #a9743b 0%, #8a5a2b 50%, #6b4422 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+        a, button { transition: all .3s ease; }
+
+        .page { display: none; animation: pageIn .5s ease both; }
+        .page.active { display: block; }
+        @keyframes pageIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-link { position: relative; }
+        .nav-link.nav-active { color: rgb(var(--secondary)) !important; }
+        .nav-link::after { content: ""; position: absolute; inset-inline-start: 0; bottom: -6px; height: 2px; width: 0; background: linear-gradient(90deg,#e0b07a,#8a5a2b); transition: width .3s ease; }
+        .nav-link:hover::after, .nav-link.nav-active::after { width: 100%; }
+
+        .steam path { animation: steam 3.2s ease-in-out infinite; }
+        .steam path:nth-child(2) { animation-delay: .6s; }
+        .steam path:nth-child(3) { animation-delay: 1.2s; }
+        @keyframes steam { 0% { opacity: 0; transform: translateY(6px) scaleY(.8); } 40% { opacity: .8; } 100% { opacity: 0; transform: translateY(-14px) scaleY(1.2); } }
+        .machine { animation: floaty 6s ease-in-out infinite; }
+        @keyframes floaty { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-10px);} }
+
+        #toast {
+            position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(120%);
+            background: rgba(42,29,23,.92); border: 1px solid rgba(212,163,115,.5); color: #f0e6da;
+            padding: 12px 22px; border-radius: 9999px; z-index: 100; backdrop-filter: blur(10px);
+            transition: transform .4s cubic-bezier(.2,.9,.3,1.3); box-shadow: 0 12px 30px -6px rgba(0,0,0,.6); font-size: 14px;
+        }
+        .light #toast { background: rgba(255,250,243,.95); color: #2a1810; border-color: rgba(154,95,43,.5); }
+        #toast.show { transform: translateX(-50%) translateY(0); }
+
+        .icon-btn { width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px; border: 1px solid rgb(var(--outline-variant)); color: rgb(var(--secondary)); }
+        .icon-btn:hover { background: rgb(var(--secondary) / .12); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+
+<!-- ===== TOP APP BAR (desktop) ===== -->
+<nav class="bg-surface/70 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 hidden md:block">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-gradient" data-nav="home" href="#home">Artisan Coffee Co.</a>
+<div class="flex gap-8 font-nav text-[17px] font-semibold tracking-tight items-center">
+<a class="nav-link text-on-surface-variant hover:text-secondary" data-nav="home" data-i18n="nav.home" href="#home">Home</a>
+<a class="nav-link text-on-surface-variant hover:text-secondary" data-nav="menu" data-i18n="nav.menu" href="#menu">Menu</a>
+<a class="nav-link text-on-surface-variant hover:text-secondary" data-nav="story" data-i18n="nav.story" href="#story">Our Story</a>
+<a class="nav-link text-on-surface-variant hover:text-secondary" data-nav="locations" data-i18n="nav.locations" href="#locations">Locations</a>
+</div>
+<div class="flex items-center gap-3">
+<button id="langBtn" class="icon-btn font-label-caps text-[13px]" title="Language">ع</button>
+<button id="themeBtn" class="icon-btn" title="Theme"><span class="material-symbols-outlined text-[20px]">light_mode</span></button>
+<button data-nav="order" onclick="location.hash='#order'" class="bg-secondary text-on-secondary px-7 py-3 rounded-2xl font-nav text-[16px] font-bold tracking-tight hover:bg-secondary-container hover:text-on-secondary-container glow-cyan flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span><span data-i18n="nav.order">Order</span>
+<span data-cart-count class="hidden bg-on-secondary/20 px-2 py-0.5 rounded-full text-[11px]">0</span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- ===== MOBILE TOP BAR ===== -->
+<div class="md:hidden flex justify-between items-center px-margin-mobile py-4 fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<a class="font-display-lg-mobile text-display-lg-mobile text-gradient" data-nav="home" href="#home">Artisan</a>
+<div class="flex items-center gap-2">
+<button id="langBtnM" class="icon-btn font-label-caps text-[13px]">ع</button>
+<button id="themeBtnM" class="icon-btn"><span class="material-symbols-outlined text-[20px]">light_mode</span></button>
+<button id="menuBtn" class="icon-btn"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<!-- Mobile drawer -->
+<div id="mobileMenu" class="md:hidden fixed inset-0 z-40 bg-surface/95 backdrop-blur-lg flex-col items-center justify-center gap-8 hidden">
+<a class="nav-link font-nav text-3xl font-bold tracking-tight text-primary" data-nav="home" data-i18n="nav.home" href="#home">Home</a>
+<a class="nav-link font-nav text-3xl font-bold tracking-tight text-primary" data-nav="menu" data-i18n="nav.menu" href="#menu">Menu</a>
+<a class="nav-link font-nav text-3xl font-bold tracking-tight text-primary" data-nav="story" data-i18n="nav.story" href="#story">Our Story</a>
+<a class="nav-link font-nav text-3xl font-bold tracking-tight text-primary" data-nav="locations" data-i18n="nav.locations" href="#locations">Locations</a>
+<a class="nav-link font-nav text-3xl font-bold tracking-tight text-secondary" data-nav="order" data-i18n="nav.order" href="#order">Order</a>
+</div>
+
+<!-- ===== MAIN ===== -->
+<main class="pt-[100px] md:pt-[120px] pb-stack-lg">
+
+<!-- ============ PAGE: HOME ============ -->
+<section class="page" data-page="home">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<div class="relative w-full h-[640px] md:h-[720px] rounded-3xl overflow-hidden soft-shadow bg-surface-container-low">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" style="background-image: url('assets/img/1554118811-1e0d58224f24.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-surface/20"></div>
+<div class="relative z-10 h-full flex flex-col md:flex-row items-center justify-between p-margin-mobile md:p-margin-desktop gap-8">
+<div class="max-w-xl glass p-8 rounded-3xl">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-3" data-i18n="hero.badge">Specialty Coffee House</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4"><span class="text-gradient" data-i18n="hero.title">A place to gather, brew, and grow.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6" data-i18n="hero.desc">Welcome to your local hearth. We serve meticulously crafted coffee in a space designed for connection and community.</p>
+<div class="flex flex-wrap gap-3">
+<a href="#menu" class="bg-secondary text-on-secondary px-8 py-4 rounded-2xl font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container glow-cyan" data-i18n="hero.cta1">Explore the Menu</a>
+<a href="#story" class="border border-secondary/50 text-secondary px-8 py-4 rounded-2xl font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary/10" data-i18n="hero.cta2">Our Story</a>
+</div>
+</div>
+<div class="machine hidden lg:block shrink-0">
+<svg width="280" height="240" viewBox="0 0 240 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="steam" stroke="#f0e6da" stroke-width="3" stroke-linecap="round" opacity="0.8">
+<path d="M112 150 c-6 -8 6 -12 0 -22"/><path d="M120 150 c-6 -8 6 -12 0 -22"/><path d="M128 150 c-6 -8 6 -12 0 -22"/>
+</g>
+<rect x="28" y="178" width="184" height="20" rx="7" fill="#3a2820"/>
+<rect x="28" y="178" width="184" height="7" rx="3" fill="#4a3a30"/>
+<rect x="48" y="78" width="144" height="100" rx="12" fill="#d4a373"/>
+<rect x="48" y="78" width="144" height="34" rx="12" fill="#c8915a"/>
+<rect x="70" y="54" width="100" height="28" rx="9" fill="#8a5a2b"/>
+<circle cx="120" cy="44" r="9" fill="#e0b07a"/>
+<rect x="116" y="30" width="8" height="16" rx="3" fill="#8a5a2b"/>
+<circle cx="120" cy="95" r="13" fill="#1a1110"/><circle cx="120" cy="95" r="10" fill="#241814"/>
+<path d="M120 95 l5 -6" stroke="#e0b07a" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="68" cy="135" r="7" fill="#3a2820"/><circle cx="172" cy="135" r="7" fill="#3a2820"/>
+<rect x="96" y="115" width="48" height="16" rx="4" fill="#3a2820"/>
+<rect x="110" y="131" width="20" height="20" fill="#3a2820"/>
+<rect x="100" y="149" width="40" height="7" rx="3" fill="#231309"/>
+<rect x="103" y="158" width="34" height="20" rx="3" fill="#f0e6da"/>
+<path d="M137 162 h7 a6 6 0 0 1 0 12 h-7" fill="none" stroke="#f0e6da" stroke-width="4"/>
+<rect x="103" y="158" width="34" height="6" rx="3" fill="#c8915a"/>
+</svg>
+</div>
+</div>
+</div>
+</div>
+
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary" data-i18n="community.title">Local Community Board</h2>
+<a class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:underline mt-2 md:mt-0" href="#locations" data-i18n="community.viewall">View All Events</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass rounded-3xl p-6 soft-shadow hover:-translate-y-1.5">
+<div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">calendar_month</span><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest" data-i18n="c1.badge">This Weekend</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2" data-i18n="c1.title">Morning Latte Art Workshop</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4" data-i18n="c1.desc">Join our head barista for a hands-on session pouring hearts and rosettas. Beginners welcome!</p>
+<button data-rsvp class="w-full py-2 border border-secondary text-secondary rounded-xl font-label-caps text-label-caps uppercase hover:bg-secondary/10" data-i18n="c1.btn">RSVP</button>
+</div>
+<div class="glass rounded-3xl p-6 soft-shadow hover:-translate-y-1.5">
+<div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-tertiary" style="font-variation-settings:'FILL' 1;">eco</span><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest" data-i18n="c2.badge">Ongoing</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2" data-i18n="c2.title">Neighborhood Compost Drive</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4" data-i18n="c2.desc">Bring your coffee grounds and organic scraps. We partner with local urban farms to keep soil healthy.</p>
+<button data-rsvp class="w-full py-2 border border-secondary text-secondary rounded-xl font-label-caps text-label-caps uppercase hover:bg-secondary/10" data-i18n="c2.btn">Learn More</button>
+</div>
+<div class="glass rounded-3xl p-6 soft-shadow border-2 border-secondary/30 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings:'FILL' 1;">campaign</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2" data-i18n="c3.title">Have an Idea?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6" data-i18n="c3.desc">We love hosting local creators, book clubs, and pop-ups.</p>
+<button data-rsvp class="bg-secondary text-on-secondary px-6 py-3 rounded-xl font-label-caps text-label-caps uppercase hover:bg-secondary-container hover:text-on-secondary-container" data-i18n="c3.btn">Host an Event</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ PAGE: MENU ============ -->
+<section class="page" data-page="menu">
+<!-- Menu banner with background image -->
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<div class="relative w-full h-[360px] md:h-[460px] rounded-3xl overflow-hidden soft-shadow bg-surface-container-low">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/img/1517433670267-08bbd4be890f.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/65 to-surface/25"></div>
+<div class="relative z-10 h-full flex flex-col justify-end p-margin-mobile md:p-margin-desktop">
+<div class="max-w-2xl">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-2" data-i18n="menu.badge">Crafted Daily</p>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-3"><span class="text-gradient" data-i18n="menu.title">Our Coffee Menu</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant" data-i18n="menu.desc">From single-origin pours to silky milk drinks and fresh-baked pastries — every item made with care.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Categorized items -->
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div id="menuGrid"></div>
+</div>
+</section>
+
+<!-- ============ PAGE: OUR STORY ============ -->
+<section class="page" data-page="story">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="rounded-3xl overflow-hidden h-[420px] soft-shadow">
+<img class="w-full h-full object-cover" src="assets/img/1511920170033-f8396924c348.jpg" alt="Barista at work"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-2" data-i18n="story.badge">Since 2014</p>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6"><span class="text-gradient" data-i18n="story.title">Technical precision. Organic warmth.</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4" data-i18n="story.desc">We started with a single roaster and a simple belief: great coffee is a craft and a community ritual. Today we roast in small batches, source directly from growers, and pour every cup like it matters — because it does.</p>
+<div class="grid grid-cols-3 gap-4 mt-8">
+<div class="glass rounded-2xl p-4 text-center"><p class="font-display-lg text-headline-md text-secondary">10+</p><p class="font-label-caps text-label-caps text-outline uppercase" data-i18n="story.years">Years</p></div>
+<div class="glass rounded-2xl p-4 text-center"><p class="font-display-lg text-headline-md text-secondary">14</p><p class="font-label-caps text-label-caps text-outline uppercase" data-i18n="story.origins">Origins</p></div>
+<div class="glass rounded-2xl p-4 text-center"><p class="font-display-lg text-headline-md text-secondary">2</p><p class="font-label-caps text-label-caps text-outline uppercase" data-i18n="story.cafes">Cafés</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ PAGE: LOCATIONS ============ -->
+<section class="page" data-page="locations">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg max-w-2xl mx-auto">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-2" data-i18n="loc.badge">Come Visit</p>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4"><span class="text-gradient" data-i18n="loc.title">Find a Hearth Near You</span></h2>
+</div>
+<div id="locGrid" class="grid grid-cols-1 md:grid-cols-2 gap-gutter"></div>
+</div>
+</section>
+
+<!-- ============ PAGE: ORDER ============ -->
+<section class="page" data-page="order">
+<div class="px-margin-mobile md:px-margin-desktop mx-auto max-w-2xl">
+<div class="glass rounded-3xl p-8 soft-shadow text-center">
+<span class="material-symbols-outlined text-5xl text-secondary mb-4" style="font-variation-settings:'FILL' 1;">local_cafe</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4"><span class="text-gradient" data-i18n="order.title">Your Order</span></h2>
+<p class="font-body-lg text-on-surface-variant mb-6"><span data-i18n="order.items">Items in your bag:</span> <span data-cart-count class="text-secondary font-bold">0</span></p>
+<div id="orderList" class="text-start mb-6 divide-y divide-outline-variant/20"></div>
+<a href="#menu" class="inline-block bg-secondary text-on-secondary px-8 py-4 rounded-2xl font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container glow-cyan" data-i18n="order.add">+ Add from Menu</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (global — shows on every page) ===== -->
+<footer class="border-t border-outline-variant/20 w-full py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto font-body-md text-body-md">
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg text-display-lg-mobile text-gradient mb-4 block" href="#home">Artisan</a>
+<p class="text-on-surface-variant max-w-sm mb-4" data-i18n="footer.tagline">© 2024 Artisan Coffee Co. Technical Precision. Organic Warmth.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary w-fit" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-secondary w-fit" href="#">Twitter</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary w-fit" href="#locations" data-i18n="footer.contact">Contact Us</a>
+<a class="text-on-surface-variant hover:text-secondary w-fit" href="#" data-i18n="footer.newsletter">Newsletter</a>
+</div>
+</div>
+</footer>
+
+<div id="toast"></div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- i18n dictionary ---------- */
+  const I18N = {
+    en: {
+      "nav.home":"Home","nav.menu":"Menu","nav.story":"Our Story","nav.locations":"Locations","nav.order":"Order",
+      "hero.badge":"Specialty Coffee House","hero.title":"A place to gather, brew, and grow.",
+      "hero.desc":"Welcome to your local hearth. We serve meticulously crafted coffee in a space designed for connection and community.",
+      "hero.cta1":"Explore the Menu","hero.cta2":"Our Story",
+      "community.title":"Local Community Board","community.viewall":"View All Events",
+      "c1.badge":"This Weekend","c1.title":"Morning Latte Art Workshop","c1.desc":"Join our head barista for a hands-on session pouring hearts and rosettas. Beginners welcome!","c1.btn":"RSVP",
+      "c2.badge":"Ongoing","c2.title":"Neighborhood Compost Drive","c2.desc":"Bring your coffee grounds and organic scraps. We partner with local urban farms to keep soil healthy.","c2.btn":"Learn More",
+      "c3.title":"Have an Idea?","c3.desc":"We love hosting local creators, book clubs, and pop-ups.","c3.btn":"Host an Event",
+      "menu.badge":"Crafted Daily","menu.title":"Our Coffee Menu","menu.desc":"From single-origin pours to silky milk drinks and fresh-baked pastries — every item made with care.","menu.add":"Add to Order",
+      "cat.coffee":"Hot Coffee","cat.cold":"Cold Drinks","cat.bakery":"Pastries & Bakery",
+      "story.badge":"Since 2014","story.title":"Technical precision. Organic warmth.","story.desc":"We started with a single roaster and a simple belief: great coffee is a craft and a community ritual. Today we roast in small batches, source directly from growers, and pour every cup like it matters — because it does.","story.years":"Years","story.origins":"Origins","story.cafes":"Cafés",
+      "loc.badge":"Come Visit","loc.title":"Find a Hearth Near You","loc.directions":"Get Directions",
+      "order.title":"Your Order","order.items":"Items in your bag:","order.add":"+ Add from Menu","order.empty":"Your bag is empty — add something tasty from the menu.","order.total":"Total",
+      "footer.tagline":"© 2024 Artisan Coffee Co. Technical Precision. Organic Warmth.","footer.contact":"Contact Us","footer.newsletter":"Newsletter",
+      "toast.added":"Added {x} to your order","toast.rsvp":"Thanks! We'll be in touch soon."
+    },
+    ar: {
+      "nav.home":"الرئيسية","nav.menu":"القائمة","nav.story":"قصتنا","nav.locations":"الفروع","nav.order":"اطلب",
+      "hero.badge":"محمصة قهوة مختصة","hero.title":"مكانٌ نجتمع فيه، ونُحضّر، وننمو.",
+      "hero.desc":"أهلاً بك في ركنك الدافئ. نقدّم قهوة محضّرة بعناية في مساحةٍ صُمّمت للتواصل والمجتمع.",
+      "hero.cta1":"تصفّح القائمة","hero.cta2":"قصتنا",
+      "community.title":"لوحة المجتمع المحلي","community.viewall":"كل الفعاليات",
+      "c1.badge":"نهاية الأسبوع","c1.title":"ورشة فنّ اللاتيه الصباحية","c1.desc":"انضمّ إلى رئيس الباريستا في جلسة عملية لرسم القلوب والوريدات. المبتدئون مُرحّبٌ بهم!","c1.btn":"احجز",
+      "c2.badge":"مستمر","c2.title":"حملة تدوير المخلّفات","c2.desc":"أحضر بقايا القهوة والمخلّفات العضوية. نتعاون مع المزارع المحلية للحفاظ على خصوبة التربة.","c2.btn":"اعرف المزيد",
+      "c3.title":"لديك فكرة؟","c3.desc":"يسعدنا استضافة المبدعين المحليين، ونوادي الكتب، والفعاليات.","c3.btn":"استضِف فعالية",
+      "menu.badge":"يُحضّر يومياً","menu.title":"قائمة القهوة","menu.desc":"من القهوة أحادية المصدر ومشروبات الحليب الحريرية إلى المعجنات الطازجة — كلّ صنفٍ يُحضّر بعناية.","menu.add":"أضف للطلب",
+      "cat.coffee":"قهوة ساخنة","cat.cold":"مشروبات باردة","cat.bakery":"معجنات ومخبوزات",
+      "story.badge":"منذ 2014","story.title":"دقّةٌ تقنية. ودفءٌ طبيعي.","story.desc":"بدأنا بمحمصةٍ واحدة وإيمانٍ بسيط: القهوة الرائعة حرفةٌ وطقسٌ مجتمعي. اليوم نحمّص بكمياتٍ صغيرة، ونستورد مباشرةً من المزارعين، ونصبّ كلّ كوبٍ وكأنه يهم — لأنه فعلاً يهم.","story.years":"سنوات","story.origins":"مصادر","story.cafes":"فروع",
+      "loc.badge":"تفضّل بزيارتنا","loc.title":"اعثر على أقرب فرعٍ إليك","loc.directions":"الاتجاهات",
+      "order.title":"طلبك","order.items":"العناصر في سلّتك:","order.add":"+ أضف من القائمة","order.empty":"سلّتك فارغة — أضف شيئاً لذيذاً من القائمة.","order.total":"الإجمالي",
+      "footer.tagline":"© 2024 Artisan Coffee Co. دقّة تقنية. ودفءٌ طبيعي.","footer.contact":"تواصل معنا","footer.newsletter":"النشرة البريدية",
+      "toast.added":"تمت إضافة {x} إلى طلبك","toast.rsvp":"شكراً لك! سنتواصل معك قريباً."
+    }
+  };
+
+  /* ---------- Bilingual data ---------- */
+  const MENU = [
+    /* ---- Hot Coffee ---- */
+    { id:"espresso", cat:"coffee", price:3.0, icon:"coffee", en:{name:"Espresso", origin:"Double shot", tags:["Bold","Cocoa"]}, ar:{name:"إسبريسو", origin:"جرعة مزدوجة", tags:["جريء","كاكاو"]} },
+    { id:"americano", cat:"coffee", price:3.2, icon:"coffee", en:{name:"Americano", origin:"Hot water + espresso", tags:["Clean","Bold"]}, ar:{name:"أمريكانو", origin:"ماء ساخن + إسبريسو", tags:["نقي","جريء"]} },
+    { id:"cappuccino", cat:"coffee", price:4.2, icon:"local_cafe", en:{name:"Cappuccino", origin:"Espresso + foam", tags:["Silky","Balanced"]}, ar:{name:"كابتشينو", origin:"إسبريسو + رغوة", tags:["حريري","متوازن"]} },
+    { id:"flatwhite", cat:"coffee", price:4.5, icon:"coffee_maker", en:{name:"Flat White", origin:"Velvet microfoam", tags:["Smooth","Creamy"]}, ar:{name:"فلات وايت", origin:"رغوة مخمليّة", tags:["ناعم","كريمي"]} },
+    { id:"macchiato", cat:"coffee", price:3.8, icon:"local_cafe", en:{name:"Macchiato", origin:"Espresso + foam dab", tags:["Strong","Compact"]}, ar:{name:"ماكياتو", origin:"إسبريسو + لمسة رغوة", tags:["قوي","مركّز"]} },
+    { id:"cortado", cat:"coffee", price:4.0, icon:"coffee_maker", en:{name:"Cortado", origin:"Equal milk", tags:["Balanced","Smooth"]}, ar:{name:"كورتادو", origin:"حليب متساوٍ", tags:["متوازن","ناعم"]} },
+    { id:"caramel", cat:"coffee", price:5.0, icon:"emoji_food_beverage", en:{name:"Caramel Latte", origin:"House caramel", tags:["Sweet","Buttery"]}, ar:{name:"لاتيه كراميل", origin:"كراميل بيتي", tags:["حلو","زبدي"]} },
+    { id:"mocha", cat:"coffee", price:5.2, icon:"local_cafe", en:{name:"Mocha", origin:"Dark chocolate", tags:["Rich","Cocoa"]}, ar:{name:"موكا", origin:"شوكولاتة داكنة", tags:["غني","كاكاو"]} },
+    { id:"turkish", cat:"coffee", price:3.5, icon:"coffee", en:{name:"Turkish Coffee", origin:"Finely ground, cardamom", tags:["Rich","Spiced"]}, ar:{name:"قهوة تركي", origin:"مطحونة ناعم، هيل", tags:["غني","مبهّر"]} },
+    { id:"hearth", cat:"coffee", price:4.0, icon:"filter_alt", en:{name:"Hearth Blend", origin:"Guatemala / Antigua", tags:["Toasted Nut","Plum"]}, ar:{name:"خلطة المَوقد", origin:"غواتيمالا / أنتيغوا", tags:["مكسّرات محمّصة","برقوق"]} },
+    { id:"sunlit", cat:"coffee", price:4.4, icon:"wb_sunny", en:{name:"Sunlit Canopy", origin:"Ethiopia / Yirgacheffe", tags:["Jasmine","Honey"]}, ar:{name:"مظلّة الشمس", origin:"إثيوبيا / يرغاتشيف", tags:["ياسمين","عسل"]} },
+    /* ---- Cold Drinks ---- */
+    { id:"coldbrew", cat:"cold", price:4.8, icon:"ac_unit", en:{name:"Cold Brew", origin:"18h steeped", tags:["Smooth","Low-acid"]}, ar:{name:"كولد برو", origin:"منقوع 18 ساعة", tags:["ناعم","حموضة منخفضة"]} },
+    { id:"icedlatte", cat:"cold", price:4.6, icon:"ac_unit", en:{name:"Iced Latte", origin:"Chilled + milk", tags:["Refreshing","Smooth"]}, ar:{name:"لاتيه مثلّج", origin:"بارد + حليب", tags:["منعش","ناعم"]} },
+    { id:"icedmocha", cat:"cold", price:5.0, icon:"ac_unit", en:{name:"Iced Mocha", origin:"Cocoa + ice", tags:["Sweet","Cool"]}, ar:{name:"موكا مثلّج", origin:"كاكاو + ثلج", tags:["حلو","بارد"]} },
+    { id:"frappe", cat:"cold", price:5.5, icon:"icecream", en:{name:"Frappé", origin:"Blended ice", tags:["Creamy","Frozen"]}, ar:{name:"فرابيه", origin:"مخفوق مثلّج", tags:["كريمي","مثلّج"]} },
+    { id:"affogato", cat:"cold", price:6.0, icon:"icecream", en:{name:"Affogato", origin:"Espresso + gelato", tags:["Dessert","Sweet"]}, ar:{name:"أفوغاتو", origin:"إسبريسو + جيلاتو", tags:["حلوى","حلو"]} },
+    /* ---- Pastries & Bakery ---- */
+    { id:"croissant", cat:"bakery", price:3.0, icon:"bakery_dining", en:{name:"Butter Croissant", origin:"Flaky, golden", tags:["Buttery","Flaky"]}, ar:{name:"كرواسون بالزبدة", origin:"هشّ، ذهبي", tags:["زبدي","هشّ"]} },
+    { id:"painchoc", cat:"bakery", price:3.5, icon:"bakery_dining", en:{name:"Pain au Chocolat", origin:"Dark chocolate", tags:["Chocolate","Flaky"]}, ar:{name:"بان أو شوكولا", origin:"شوكولاتة داكنة", tags:["شوكولاتة","هشّ"]} },
+    { id:"almondcr", cat:"bakery", price:3.8, icon:"bakery_dining", en:{name:"Almond Croissant", origin:"Almond cream", tags:["Nutty","Sweet"]}, ar:{name:"كرواسون لوز", origin:"كريمة لوز", tags:["مكسّرات","حلو"]} },
+    { id:"cinnamon", cat:"bakery", price:4.0, icon:"cake", en:{name:"Cinnamon Roll", origin:"Cinnamon glaze", tags:["Warm","Sweet"]}, ar:{name:"رول قرفة", origin:"صوص قرفة", tags:["دافئ","حلو"]} },
+    { id:"muffin", cat:"bakery", price:3.2, icon:"cake", en:{name:"Blueberry Muffin", origin:"Fresh blueberries", tags:["Fruity","Soft"]}, ar:{name:"مافن توت", origin:"توت طازج", tags:["فاكهي","طري"]} },
+    { id:"cookie", cat:"bakery", price:2.5, icon:"cookie", en:{name:"Chocolate Cookie", origin:"Chunky chips", tags:["Chewy","Sweet"]}, ar:{name:"كوكي شوكولاتة", origin:"قطع شوكولاتة", tags:["مطّاطي","حلو"]} },
+    { id:"brownie", cat:"bakery", price:3.5, icon:"cake", en:{name:"Fudge Brownie", origin:"Gooey center", tags:["Rich","Chocolate"]}, ar:{name:"براوني", origin:"قلب طري", tags:["غني","شوكولاتة"]} },
+    { id:"cheesecake", cat:"bakery", price:4.5, icon:"cake", en:{name:"Cheesecake", origin:"New York style", tags:["Creamy","Tangy"]}, ar:{name:"تشيز كيك", origin:"نيويوركي", tags:["كريمي","حامض خفيف"]} },
+    { id:"bananabread", cat:"bakery", price:3.3, icon:"bakery_dining", en:{name:"Banana Bread", origin:"Walnut loaf", tags:["Moist","Nutty"]}, ar:{name:"خبز الموز", origin:"رغيف بالجوز", tags:["طري","مكسّرات"]} },
+    { id:"bagel", cat:"bakery", price:3.0, icon:"lunch_dining", en:{name:"Bagel & Cream Cheese", origin:"Toasted", tags:["Savory","Chewy"]}, ar:{name:"بيغل وجبنة كريمية", origin:"محمّص", tags:["مالح","مطّاطي"]} },
+    { id:"danish", cat:"bakery", price:3.6, icon:"bakery_dining", en:{name:"Fruit Danish", origin:"Seasonal fruit", tags:["Fruity","Buttery"]}, ar:{name:"دنماركية بالفواكه", origin:"فواكه موسمية", tags:["فاكهي","زبدي"]} }
+  ];
+  /* ---- Product photos (Unsplash IDs, verified) ---- */
+  const IMG = {
+    espresso:"1510591509098-f4fdc6d0ff04", americano:"1551030173-122aabc4489c", cappuccino:"1572442388796-11668a67e53d",
+    flatwhite:"1517256064527-09c73fc73e38", macchiato:"1485808191679-5f86510681a2", cortado:"1494314671902-399b18174975",
+    caramel:"1497636577773-f1231844b336", mocha:"1578314675249-a6910f80cc4e", turkish:"1578374173705-969cbe6f2d6b",
+    hearth:"1447933601403-0c6688de566e", sunlit:"1442550528053-c431ecb55509",
+    coldbrew:"1461023058943-07fcbe16d735", icedlatte:"1517701550927-30cf4ba1dba5", icedmocha:"1561043433-aaf687c4cf04",
+    frappe:"1572490122747-3968b75cc699", affogato:"1633933358116-a27b902fad35",
+    croissant:"1555507036-ab1f4038808a", painchoc:"1623334044303-241021148842", almondcr:"1568471173242-461f0a730452",
+    cinnamon:"1509365465985-25d11c17e812", muffin:"1607958996333-41aef7caefaa", cookie:"1499636136210-6f4ee915583e",
+    brownie:"1606313564200-e75d5e30476c", cheesecake:"1533134242443-d4fd215305ad", bananabread:"1605286978633-2dec93ff88a2",
+    bagel:"1585445490387-f47934b73b54", danish:"1620921568790-c1cf8984624c"
+  };
+  function imgUrl(id) { return "assets/img/" + (IMG[id] || IMG.espresso) + ".jpg"; }
+
+  const LOCATIONS = [
+    { icon:"storefront", phone:"(555) 014-2200", en:{name:"Downtown Hearth", addr:"120 Maple Street, City Center", hours:"Mon–Sun · 7am – 9pm"}, ar:{name:"مَوقد وسط المدينة", addr:"١٢٠ شارع مايبل، وسط المدينة", hours:"السبت–الجمعة · ٧ص – ٩م"} },
+    { icon:"factory", phone:"(555) 014-3300", en:{name:"Riverside Roastery", addr:"8 Canal Walk, Riverside", hours:"Mon–Fri · 6am – 7pm"}, ar:{name:"محمصة ضفّة النهر", addr:"٨ ممشى القناة، ضفّة النهر", hours:"الاثنين–الجمعة · ٦ص – ٧م"} }
+  ];
+
+  /* ---------- State ---------- */
+  let lang = load("coffee-lang", "en");
+  let theme = load("coffee-theme", "dark");
+  const cart = {}; // id -> qty
+  function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N.en[key] || key); }
+  function load(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
+  function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  /* ---------- Render menu ---------- */
+  const menuGrid = document.getElementById("menuGrid");
+  const CATS = [
+    { key:"coffee", icon:"local_cafe" },
+    { key:"cold",   icon:"ac_unit" },
+    { key:"bakery", icon:"bakery_dining" }
+  ];
+  function renderCard(d) {
+    const L = d[lang];
+    const tags = L.tags.map(function (x) {
+      return '<span class="px-3 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-caps text-label-caps">' + x + '</span>';
+    }).join("");
+    return '<div class="glass rounded-3xl overflow-hidden soft-shadow hover:-translate-y-1.5 flex flex-col group">' +
+      '<div class="relative h-44 w-full overflow-hidden">' +
+        '<img src="' + imgUrl(d.id) + '" alt="' + L.name + '" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>' +
+        '<span class="absolute top-3 ' + (document.documentElement.dir === "rtl" ? "left-3" : "right-3") + ' bg-surface/85 backdrop-blur-sm text-secondary font-display-lg text-headline-sm px-3 py-1 rounded-full border border-secondary/30">$' + d.price.toFixed(2) + '</span>' +
+        '<span class="absolute bottom-3 ' + (document.documentElement.dir === "rtl" ? "right-3" : "left-3") + ' w-9 h-9 rounded-full bg-secondary/90 flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">' + d.icon + '</span></span>' +
+      '</div>' +
+      '<div class="p-6 flex flex-col flex-1">' +
+        '<p class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-1">' + L.origin + '</p>' +
+        '<h3 class="font-headline-md text-headline-sm text-primary mb-3">' + L.name + '</h3>' +
+        '<div class="flex gap-2 flex-wrap mb-5">' + tags + '</div>' +
+        '<button data-add="' + d.id + '" class="mt-auto w-full py-2.5 bg-secondary text-on-secondary rounded-xl font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center gap-2">' +
+          '<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>' + t("menu.add") + '</button>' +
+      '</div>' +
+    '</div>';
+  }
+  function renderMenu() {
+    menuGrid.innerHTML = CATS.map(function (c) {
+      const items = MENU.filter(function (m) { return m.cat === c.key; });
+      if (!items.length) return "";
+      const cards = items.map(renderCard).join("");
+      return '<div class="mb-stack-lg">' +
+        '<div class="flex items-center gap-3 mb-stack-md">' +
+          '<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings:\'FILL\' 1;">' + c.icon + '</span>' +
+          '<h3 class="font-headline-md text-headline-md text-primary whitespace-nowrap">' + t("cat." + c.key) + '</h3>' +
+          '<span class="font-label-caps text-label-caps text-outline">(' + items.length + ')</span>' +
+          '<div class="flex-1 h-px bg-outline-variant/30"></div>' +
+        '</div>' +
+        '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">' + cards + '</div>' +
+      '</div>';
+    }).join("");
+  }
+
+  /* ---------- Render locations ---------- */
+  const locGrid = document.getElementById("locGrid");
+  function renderLocations() {
+    locGrid.innerHTML = LOCATIONS.map(function (l) {
+      const L = l[lang];
+      return '<div class="glass rounded-3xl p-8 soft-shadow hover:-translate-y-1">' +
+        '<div class="flex items-center gap-3 mb-4"><span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings:\'FILL\' 1;">' + l.icon + '</span><h3 class="font-headline-md text-headline-md text-primary">' + L.name + '</h3></div>' +
+        '<p class="font-body-md text-on-surface-variant flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>' + L.addr + '</p>' +
+        '<p class="font-body-md text-on-surface-variant flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>' + L.hours + '</p>' +
+        '<p class="font-body-md text-on-surface-variant flex items-center gap-2 mb-6"><span class="material-symbols-outlined text-secondary text-[18px]">call</span>' + l.phone + '</p>' +
+        '<button data-rsvp class="w-full py-2.5 border border-secondary text-secondary rounded-xl font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary/10">' + t("loc.directions") + '</button>' +
+      '</div>';
+    }).join("");
+  }
+
+  /* ---------- Cart ---------- */
+  function findItem(id) { for (let i = 0; i < MENU.length; i++) if (MENU[i].id === id) return MENU[i]; return null; }
+  function cartCount() { let c = 0; Object.keys(cart).forEach(function (k) { c += cart[k]; }); return c; }
+  function cartTotal() { let s = 0; Object.keys(cart).forEach(function (k) { s += cart[k] * findItem(k).price; }); return s; }
+  function renderCart() {
+    const count = cartCount();
+    document.querySelectorAll("[data-cart-count]").forEach(function (el) {
+      el.textContent = count;
+      if (el.closest("button")) el.classList.toggle("hidden", count === 0);
+    });
+    const list = document.getElementById("orderList");
+    const ids = Object.keys(cart);
+    if (!ids.length) { list.innerHTML = '<p class="py-6 text-on-surface-variant">' + t("order.empty") + '</p>'; return; }
+    list.innerHTML = ids.map(function (id) {
+      const it = findItem(id);
+      return '<div class="flex justify-between items-center py-3"><span class="text-primary">' + cart[id] + '× ' + it[lang].name + '</span><span class="text-secondary font-mono-technical">$' + (cart[id] * it.price).toFixed(2) + '</span></div>';
+    }).join("") +
+    '<div class="flex justify-between items-center py-3 font-bold"><span class="text-primary">' + t("order.total") + '</span><span class="text-secondary">$' + cartTotal().toFixed(2) + '</span></div>';
+  }
+
+  /* ---------- i18n apply ---------- */
+  function applyI18n() {
+    document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.body.setAttribute("lang", lang);
+    const label = lang === "ar" ? "EN" : "ع";
+    ["langBtn", "langBtnM"].forEach(function (id) { const b = document.getElementById(id); if (b) b.textContent = label; });
+  }
+
+  /* ---------- Theme ---------- */
+  function applyTheme() {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    document.documentElement.classList.toggle("light", theme === "light");
+    const icon = theme === "dark" ? "light_mode" : "dark_mode";
+    ["themeBtn", "themeBtnM"].forEach(function (id) {
+      const b = document.getElementById(id); if (b) b.innerHTML = '<span class="material-symbols-outlined text-[20px]">' + icon + '</span>';
+    });
+  }
+
+  /* ---------- Router ---------- */
+  const valid = ["home", "menu", "story", "locations", "order"];
+  function showPage(name) {
+    if (valid.indexOf(name) === -1) name = "home";
+    document.querySelectorAll(".page").forEach(function (p) { p.classList.toggle("active", p.dataset.page === name); });
+    document.querySelectorAll("[data-nav]").forEach(function (a) { a.classList.toggle("nav-active", a.dataset.nav === name); });
+    closeMobile();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  function currentHash() { return (location.hash || "#home").replace("#", ""); }
+  window.addEventListener("hashchange", function () { showPage(currentHash()); });
+
+  /* ---------- Toast ---------- */
+  let toastTimer;
+  function toast(msg) {
+    const el = document.getElementById("toast");
+    el.textContent = msg; el.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove("show"); }, 2200);
+  }
+
+  /* ---------- Mobile menu ---------- */
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuBtn = document.getElementById("menuBtn");
+  function openMobile() { mobileMenu.classList.remove("hidden"); mobileMenu.classList.add("flex"); menuBtn.innerHTML = '<span class="material-symbols-outlined">close</span>'; }
+  function closeMobile() { mobileMenu.classList.add("hidden"); mobileMenu.classList.remove("flex"); if (menuBtn) menuBtn.innerHTML = '<span class="material-symbols-outlined">menu</span>'; }
+  if (menuBtn) menuBtn.addEventListener("click", function () { mobileMenu.classList.contains("hidden") ? openMobile() : closeMobile(); });
+
+  /* ---------- Events ---------- */
+  document.addEventListener("click", function (e) {
+    const add = e.target.closest("[data-add]");
+    if (add) {
+      const id = add.dataset.add;
+      cart[id] = (cart[id] || 0) + 1;
+      renderCart();
+      toast("☕ " + t("toast.added").replace("{x}", findItem(id)[lang].name));
+      return;
+    }
+    if (e.target.closest("[data-rsvp]")) { toast("✓ " + t("toast.rsvp")); }
+  });
+
+  function toggleLang() { lang = lang === "ar" ? "en" : "ar"; save("coffee-lang", lang); applyI18n(); renderMenu(); renderLocations(); renderCart(); }
+  function toggleTheme() { theme = theme === "dark" ? "light" : "dark"; save("coffee-theme", theme); applyTheme(); }
+  ["langBtn", "langBtnM"].forEach(function (id) { const b = document.getElementById(id); if (b) b.addEventListener("click", toggleLang); });
+  ["themeBtn", "themeBtnM"].forEach(function (id) { const b = document.getElementById(id); if (b) b.addEventListener("click", toggleTheme); });
+
+  /* ---------- Boot ---------- */
+  applyTheme();
+  renderMenu();
+  renderLocations();
+  applyI18n();
+  renderCart();
+  showPage(currentHash());
+})();
+</script>
+</body></html>
