@@ -416,7 +416,8 @@
       "loc.badge":"Come Visit","loc.title":"Find a Hearth Near You","loc.directions":"Get Directions",
       "order.title":"Your Order","order.items":"Items in your bag:","order.add":"+ Add from Menu","order.empty":"Your bag is empty — add something tasty from the menu.","order.total":"Total",
       "footer.tagline":"© 2024 Artisan Coffee Co. Technical Precision. Organic Warmth.","footer.contact":"Contact Us","footer.newsletter":"Newsletter",
-      "toast.added":"Added {x} to your order","toast.rsvp":"Thanks! We'll be in touch soon."
+      "order.remove":"Remove item",
+      "toast.added":"Added {x} to your order","toast.removed":"Removed {x} from your order","toast.rsvp":"Thanks! We'll be in touch soon."
     },
     ar: {
       "nav.home":"الرئيسية","nav.menu":"القائمة","nav.story":"قصتنا","nav.locations":"الفروع","nav.order":"اطلب",
@@ -433,7 +434,8 @@
       "loc.badge":"تفضّل بزيارتنا","loc.title":"اعثر على أقرب فرعٍ إليك","loc.directions":"الاتجاهات",
       "order.title":"طلبك","order.items":"العناصر في سلّتك:","order.add":"+ أضف من القائمة","order.empty":"سلّتك فارغة — أضف شيئاً لذيذاً من القائمة.","order.total":"الإجمالي",
       "footer.tagline":"© 2024 Artisan Coffee Co. دقّة تقنية. ودفءٌ طبيعي.","footer.contact":"تواصل معنا","footer.newsletter":"النشرة البريدية",
-      "toast.added":"تمت إضافة {x} إلى طلبك","toast.rsvp":"شكراً لك! سنتواصل معك قريباً."
+      "order.remove":"حذف العنصر",
+      "toast.added":"تمت إضافة {x} إلى طلبك","toast.removed":"تمت إزالة {x} من طلبك","toast.rsvp":"شكراً لك! سنتواصل معك قريباً."
     }
   };
 
@@ -514,7 +516,7 @@
       '<div class="relative h-44 w-full overflow-hidden">' +
         '<img src="' + imgUrl(d.id) + '" alt="' + L.name + '" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>' +
         '<div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>' +
-        '<span class="absolute top-3 ' + (document.documentElement.dir === "rtl" ? "left-3" : "right-3") + ' bg-surface/85 backdrop-blur-sm text-secondary font-display-lg text-headline-sm px-3 py-1 rounded-full border border-secondary/30">$' + d.price.toFixed(2) + '</span>' +
+        '<span class="absolute top-3 ' + (document.documentElement.dir === "rtl" ? "left-3" : "right-3") + ' bg-surface/85 backdrop-blur-sm text-secondary font-display-lg text-headline-sm px-3 py-1 rounded-full border border-secondary/30">' + money(d.price) + '</span>' +
         '<span class="absolute bottom-3 ' + (document.documentElement.dir === "rtl" ? "right-3" : "left-3") + ' w-9 h-9 rounded-full bg-secondary/90 flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">' + d.icon + '</span></span>' +
       '</div>' +
       '<div class="p-6 flex flex-col flex-1">' +
@@ -559,6 +561,8 @@
   }
 
   /* ---------- Cart ---------- */
+  const FX_EGP = 50; // USD -> EGP exchange rate
+  function money(usd) { const v = Math.round(usd * FX_EGP); return v + " " + (lang === "ar" ? "ج.م" : "EGP"); }
   function findItem(id) { for (let i = 0; i < MENU.length; i++) if (MENU[i].id === id) return MENU[i]; return null; }
   function cartCount() { let c = 0; Object.keys(cart).forEach(function (k) { c += cart[k]; }); return c; }
   function cartTotal() { let s = 0; Object.keys(cart).forEach(function (k) { s += cart[k] * findItem(k).price; }); return s; }
@@ -573,9 +577,12 @@
     if (!ids.length) { list.innerHTML = '<p class="py-6 text-on-surface-variant">' + t("order.empty") + '</p>'; return; }
     list.innerHTML = ids.map(function (id) {
       const it = findItem(id);
-      return '<div class="flex justify-between items-center py-3"><span class="text-primary">' + cart[id] + '× ' + it[lang].name + '</span><span class="text-secondary font-mono-technical">$' + (cart[id] * it.price).toFixed(2) + '</span></div>';
+      return '<div class="flex justify-between items-center py-3"><span class="text-primary">' + cart[id] + '× ' + it[lang].name + '</span>' +
+        '<span class="flex items-center gap-3"><span class="text-secondary font-mono-technical">' + money(cart[id] * it.price) + '</span>' +
+        '<button data-remove="' + id + '" title="' + t("order.remove") + '" aria-label="' + t("order.remove") + '" class="w-9 h-9 inline-flex items-center justify-center rounded-full border border-outline-variant/40 text-on-surface-variant hover:text-secondary hover:border-secondary/60">' +
+        '<span class="material-symbols-outlined text-[18px]">delete</span></button></span></div>';
     }).join("") +
-    '<div class="flex justify-between items-center py-3 font-bold"><span class="text-primary">' + t("order.total") + '</span><span class="text-secondary">$' + cartTotal().toFixed(2) + '</span></div>';
+    '<div class="flex justify-between items-center py-3 font-bold"><span class="text-primary">' + t("order.total") + '</span><span class="text-secondary">' + money(cartTotal()) + '</span></div>';
   }
 
   /* ---------- i18n apply ---------- */
@@ -634,6 +641,15 @@
       cart[id] = (cart[id] || 0) + 1;
       renderCart();
       toast("☕ " + t("toast.added").replace("{x}", findItem(id)[lang].name));
+      return;
+    }
+    const rm = e.target.closest("[data-remove]");
+    if (rm) {
+      const id = rm.dataset.remove;
+      const name = findItem(id)[lang].name;
+      delete cart[id];
+      renderCart();
+      toast("🗑️ " + t("toast.removed").replace("{x}", name));
       return;
     }
     if (e.target.closest("[data-rsvp]")) { toast("✓ " + t("toast.rsvp")); }
